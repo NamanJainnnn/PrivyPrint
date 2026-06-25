@@ -133,7 +133,7 @@ export default function AuthPage() {
 
       <main style={{minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", padding: "100px 24px 60px", position: "relative", zIndex: 1}}>
         <div style={{width: "100%", maxWidth: "400px", background: "#111", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "24px", padding: "44px 40px", boxShadow: "0 24px 64px rgba(0,0,0,0.5)"}}>
-          <h1 style={{fontFamily: "'Google Sans Display', sans-serif", fontWeight: 700, fontSize: "28px", color: "#fff", letterSpacing: "-0.02em", marginBottom: "8px"}}>
+          <h1 style={{fontFamily: "'Google Sans Text', sans-serif", fontWeight: 700, fontSize: "28px", color: "#fff", letterSpacing: "-0.02em", marginBottom: "8px"}}>
             {isLogin ? "Shop Login" : "Create Account"}
           </h1>
           <p style={{fontSize: "14px", color: "#666", marginBottom: "36px", fontFamily: "'Google Sans Text', sans-serif"}}>
