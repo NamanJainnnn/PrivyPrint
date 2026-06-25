@@ -201,8 +201,8 @@ if (isPdf) {
       </main>
 
       <footer>
-        <span className="footer-name">PrivyPrint</span>
-        <span className="footer-tag">Privacy-first document printing.</span>
+        
+        <span className="footer-tag">ThankYou for using PrivyPrint!</span>
       </footer>
     </>
   );
