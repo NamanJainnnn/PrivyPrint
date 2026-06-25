@@ -67,7 +67,16 @@ export default function Dashboard() {
   setPrinting(job.id);
   try {
     // Open file in new tab first
-    window.open(job.signedUrl, "_blank");
+    const isPdf = job.fileName.toLowerCase().endsWith(".pdf");
+if (isPdf) {
+  window.open(job.signedUrl, "_blank");
+} else {
+  // For images, open and trigger print dialog
+  const printWindow = window.open(job.signedUrl, "_blank");
+  printWindow.onload = () => {
+    printWindow.print();
+  };
+}
 
     // Wait 3 seconds to make sure it loads before deleting
     await new Promise(r => setTimeout(r, 3000));
